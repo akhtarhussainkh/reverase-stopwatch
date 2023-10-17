@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Countdown stopwatch</h1>
+
+    <div class="countdown">
+      <div>
+        <button onclick="startCountdown(60)">Start 1 Minute Countdown</button>
+        <button onclick="stopCountdown()" class="stop">Stop</button>
+        <button onclick="resetCountdown()" class="reset">Reset</button>
+      </div>
+      <div>
+        <button onclick="startCountdown(1800)">Start 30 Minutes Countdown</button>
+        <button onclick="stopCountdown()" class="stop">Stop</button>
+        <button onclick="resetCountdown()" class="reset">Reset</button>
+      </div>
+      <div>
+        <button onclick="startCountdown(3600)">Start 1 Hour Countdown</button>
+        <button onclick="stopCountdown()" class="stop">Stop</button>
+        <button onclick="resetCountdown()" class="reset">Reset</button>
+      </div>
+      <div id="display">00:00:00</div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
